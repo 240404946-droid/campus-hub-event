@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>submit a campus event</title>
+
+</head>
+
+<body>
+    <a href="#event-form">Skip to event form</a>
+
+    <!-- رأس الصفحة وروابط التنقل -->
+    <h1>Campus Hub</h1>
+    <ul>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Communities</a></li>
+    </ul>
+
+    <!-- نموذج إضافة الحدث -->
+    <h2 id="event-form">Submit a campus event</h2>
+    
+    <p>Required fields are marked in their labels.</p>
+
+    <form>
+        <!-- عنوان الفعالية -->
+        <p>
+            <label for="title">Event title (required)</label>
+            <input type="text" id="title" name="title" required value="Kostüm Partisi Daveti">
+        </p>
+
+        <!-- إيميل المنظم -->
+        <p>
+            <label for="email">Organizer email (required)</label>
+            <input type="email" id="email" name="email" required value="altalbmny52@gmail.com">
+        </p>
+
+        <!-- تاريخ الفعالية -->
+        <p>
+            <label for="date">Event date (required)</label>
+            <input type="date" id="date" name="date" required value="2026-11-11">
+        </p>
+
+        <!-- وقت البداية -->
+      <p>
+        <label for="time">Start time (required)</label>
+        <input type="time" id="time" name="time" value="00:00" required>
+    </p>
+
+    <p>
+
+    
+     
+        <label for="capacity">Capacity (required)</label>
+        <input type="number" id="capacity" name="capacity" value="40" required>
+    </p>
+
+      
+      
+
+        <!-- صيغة الحدث (Fieldset مع Radio Buttons) -->
+        <fieldset>
+            <legend>Event format (required)</legend>
+            <input type="radio" id="on-campus" name="format" value="on-campus" required>
+            <label for="on-campus">On campus</label>
+
+            <input type="radio" id="online" name="format" value="online" checked>
+            <label for="online">Online</label> 
+
+            <input type="radio" id="hybrid" name="format" value="hybrid">
+            <label for="hybrid">Hybrid</label>
+        </fieldset>
+
+        <br>
+
+        <!-- الوصف -->
+        <div>
+            <p>
+    <label for="description">Description</label>
+    <br>
+    <textarea id="description" name="description" rows="5" cols="50">Tüm öğrencilerimiz davetlidir! Kostüm partimizde müzik, yarışmalar ve sürpriz hediyeler sizi bekliyor. Lütfen kostümünüzü giymeyi unutmayın.</textarea>
+    <br>
+    Describe the audience, location, and accessibility arrangements. Do not include private student data.
+</p>
+        </div>
+
+        <br>
+
+        <!-- زر الإرسال -->
+        <p>
+            <button type="submit">Submit event</button>
+        </p>
+    </form>
+
+    <hr>
+    
+    <!-- تذييل الصفحة -->
+    <p>Campus Hub is a fictional student learning project.</p>
+
+</body>
+</html>"
+    
+</body>
+</html>
